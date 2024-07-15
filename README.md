@@ -19,17 +19,23 @@ Other features:
 * Scalability: if multiple copies of the AI are built, this will not cause disruption and will increase speed so long as all copies have the same ores enabled.
 * Dynamic allocation of processors to unit types: if a unit type is not in use because it is disabled, the team has no units of that type, or core is sufficiently full of all items that it can mine, mining processors for that unit type are allocated to other unit types. This avoids processors remaining idle that can be used to accelerate mining instead.
 
-## Frequently asked questions
+## Configuration
 
-### How to configure which ores and units are enabled?
+Configuration is done by editing variables at the top of the manager processor, normally a micro processor close to the message block.
 
-Ores and units to enable are configured by editing variables at the top of the manager processor, normally a micro processor close to the message block. There are 12 variables, `copperEnabled`, `leadEnabled`, `sandEnabled`, `coalEnabled`, `titaniumEnabled`, `scrapEnabled`, `berylliumEnabled`, `monoEnabled`, `polyEnabled`, `megaEnabled`, `pulsarEnabled`, and `quasarEnabled`, each of which can be set to `true` (equivalently `1`) to enable or to `false` (equivalently `0`) to disable.
+* Ores: `copperPriority`, `leadPriority`, `sandPriority`, `coalPriority`, `titaniumPriority`, `scrapPriority`, and `berylliumPriority` can be set to 0 to disable that ore, 1 to enable it, or to a number less than or greater than 1 to give it lower or higher priority relative to other ores.
+* Units: `monoEnabled`, `polyEnabled`, `megaEnabled`, `pulsarEnabled`, and `quasarEnabled` can be set to 1 to enable that unit or 0 to disable it.
+* `coreFullThreshold` is a number between 0 and 1. When all items that can be mined by a unit and are enabled and available on the map have reached that proportion of core capacity, the unit is released.
 
 Disabling all units or all ores will disable mining fully.
+
+## Frequently asked questions
 
 ### Which features are included in each variant?
 
 All variants support all ores and unit types. The variant with micro processors does not include a deflagger or support functions and the variant with five logic processors includes a deflagger but does not include support functions. All other variants support all functions, but with different processor speeds and overdrive or input types.
+
+The switch variant has switches for enabling or disabling poly, mega, pulsar, and quasar.
 
 ### How to get non-buildable items inside Erekir cores?
 
