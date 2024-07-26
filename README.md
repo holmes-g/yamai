@@ -11,6 +11,8 @@ Functions:
 * Repair miner units when they are damaged. They will move to the closest repair point, so long as it has power.
 * Repair damaged allied buildings with poly and mega, when in range.
 * Shoot at enemy units with poly and mega, when in range.
+* Flee from active enemy turrets and spawn points.
+
 
 The design attempts to avoid compromising mining speed when controlling many units and this has some tradeoffs with other features.
 
@@ -33,7 +35,17 @@ Disabling all units or all ores will disable mining fully.
 
 ### Which features are included in each variant?
 
-All variants support all ores and unit types. The variant with micro processors does not include a deflagger or support functions and the variant with five logic processors includes a deflagger but does not include support functions. All other variants support all functions, but with different processor speeds and overdrive or input types.
+| Variant | Mining | Deflagger | Self-repair | Building repair | Enemy attack | Avoiding danger |
+| --- | --- | --- | --- | --- | --- | ---
+| 6 micro processors | ✔️ | :x: | :x: | :x: | :x: | :x:
+| 5 logic processors | ✔️ | ✔️ | :x: | :x: | :x: | :x:
+| 7 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
+| 8 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
+| 14 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️
+| 6 hyper processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
+| 7 hyper processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
+
+All variants support all ores and unit types. The cheapest variants do not include support functions. Other variants offer similar features, but with different processor speeds and overdrive or input types.
 
 The switch variant has switches for enabling or disabling poly, mega, pulsar, and quasar.
 
