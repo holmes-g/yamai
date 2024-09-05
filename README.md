@@ -18,7 +18,7 @@ The design attempts to avoid compromising mining speed when controlling many uni
 
 Other features:
 
-* Scalability: if multiple copies of the AI are built, this will not cause disruption and will increase speed so long as all copies have the same ores enabled.
+* Scalability: if multiple copies of the AI are built, this will not cause disruption and will increase speed so long as all copies have the same ores enabled with the same priorities.
 * Dynamic allocation of processors to unit types: if a unit type is not in use because it is disabled, the team has no units of that type, or core is sufficiently full of all items that it can mine, mining processors for that unit type are allocated to other unit types. This avoids processors remaining idle that can be used to accelerate mining instead.
 
 ## Configuration
