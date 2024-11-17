@@ -41,6 +41,7 @@ Disabling all units or all ores will disable mining fully.
 | 5 logic processors | ✔️ | ✔️ | :x: | :x: | :x: | :x:
 | 7 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
 | 8 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
+| 10 logic processors | ✔️ | :x: | ✔️ | ✔️ | ✔️ | ✔️
 | 14 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | ✔️
 | 6 hyper processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
 | 7 hyper processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
