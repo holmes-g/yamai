@@ -38,6 +38,7 @@ Disabling all units or all ores will disable mining fully.
 | Variant | Mining | Deflagger | Self-repair | Building repair | Enemy attack | Avoiding danger |
 | --- | --- | --- | --- | --- | --- | ---
 | 6 micro processors | ✔️ | :x: | :x: | :x: | :x: | :x:
+| 14 micro processors | ✔️ | :x: | ✔️ | ✔️ | ✔️ | ✔️
 | 5 logic processors | ✔️ | ✔️ | :x: | :x: | :x: | :x:
 | 7 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
 | 8 logic processors | ✔️ | ✔️ | ✔️ | ✔️ | ✔️ | :x:
