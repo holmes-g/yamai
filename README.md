@@ -25,8 +25,8 @@ Other features:
 
 Configuration is done by editing variables at the top of the manager processor, normally a micro processor close to the message block.
 
-* Ores: `copperPriority`, `leadPriority`, `sandPriority`, `coalPriority`, `titaniumPriority`, `scrapPriority`, and `berylliumPriority` can be set to 0 to disable that ore, 1 to enable it, or to a number less than or greater than 1 to give it lower or higher priority relative to other ores.
-* Units: `monoEnabled`, `polyEnabled`, `megaEnabled`, `pulsarEnabled`, and `quasarEnabled` can be set to 1 to enable that unit or 0 to disable it.
+* Ore priorities: can be set to 0 to disable that ore, 1 to enable it, or to a number less than or greater than 1 to give it lower or higher priority relative to other ores.
+* Units: can be set to 1 to enable that unit or 0 to disable it.
 * `coreFullThreshold` is a number between 0 and 1. When all items that can be mined by a unit and are enabled and available on the map have reached that proportion of core capacity, the unit is released.
 
 Disabling all units or all ores will disable mining fully.
