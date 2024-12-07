@@ -28,6 +28,7 @@ Configuration is done by editing variables at the top of the manager processor, 
 * Ore priorities: can be set to 0 to disable that ore, 1 to enable it, or to a number less than or greater than 1 to give it lower or higher priority relative to other ores.
 * Units: can be set to 1 to enable that unit or 0 to disable it.
 * `coreFullThreshold` is a number between 0 and 1. When all items that can be mined by a unit and are enabled and available on the map have reached that proportion of core capacity, the unit is released.
+* `coreLowAmount` is a number greater than 0 (suggested range 1000–9000). Items with an amount in core under this threshold are considered critically low and units will switch to mining them more aggressively. This has no effect for units that are not mining near core. Units that are mining near core will stop mining and switch ores if the ore that they are mining has an amount in core above this threshold while another ore that they are able to mine has an amount under the threshold.
 
 Disabling all units or all ores will disable mining fully.
 
